@@ -1,0 +1,13 @@
+@import "../../../index.css";
+
+.like-button {
+  @apply bg-slate-800 flex justify-center mt-2 h-10 rounded w-full;
+}
+
+.like-button_liked {
+  @apply bg-green-800;
+}
+
+.like-button__icon_base {
+  @apply h-5 w-5 self-center text-white;
+}

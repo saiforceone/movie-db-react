@@ -1,0 +1,9 @@
+@import "../../../index.css";
+
+.navbar {
+  @apply p-4;
+}
+
+.navbar__link {
+  @apply mr-4 text-xl uppercase;
+}

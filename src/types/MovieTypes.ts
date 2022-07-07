@@ -13,7 +13,7 @@ export interface Movie {
   video: boolean;
   vote_average: number;
   vote_count: number;
-  liked?: boolean;
+  liked: boolean;
 }
 
 export interface MovieSliceState {

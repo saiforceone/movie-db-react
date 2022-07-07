@@ -31,6 +31,12 @@ export const movieSlice = createSlice({
     },
     setTotalPages: (state, action: PayloadAction<number>) => {
       state.totalPages = action.payload;
+    },
+    toggleLike: (state, action: PayloadAction<number>) => {
+      const targetIndex = state.movies.findIndex(movie => movie.id === action.payload);
+      if (targetIndex > -1) {
+        state.movies[targetIndex].liked = !state.movies[targetIndex].liked;
+      }
     }
   }
 });
@@ -41,7 +47,8 @@ export const {
   setLastError,
   setMovies,
   setTotalMovies,
-  setTotalPages
+  setTotalPages,
+  toggleLike,
 } = movieSlice.actions;
 
 export default movieSlice.reducer;
