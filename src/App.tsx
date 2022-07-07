@@ -1,9 +1,20 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
+import APIUtils from './Utils/APIUtils';
+const MOVIES_ENDPOINT = import.meta.env.VITE_MOVIE_DB_API_POPULAR_MOVIES;
 
 function App() {
   const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    const getMovies = async () => {
+      const movies = await APIUtils.getData(MOVIES_ENDPOINT);
+      console.log('movies result: ', movies);
+    }
+
+    getMovies().then()
+  }, []);
 
   return (
     <div className="App">
