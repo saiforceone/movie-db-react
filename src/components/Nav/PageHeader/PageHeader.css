@@ -1,9 +1,13 @@
 @import "../../../index.css";
 
 .page-header {
-  @apply border-b-2 flex mb-4 p-2;
+  @apply border-b-2 flex flex-1 justify-between mb-4 p-2;
 }
 
 .page-header__title {
   @apply text-3xl text-gray-800;
+}
+
+.page-header__actions {
+  @apply flex flex-row;
 }

@@ -9,3 +9,7 @@
 .page--grid {
   @apply grid grid-cols-4 gap-4;
 }
+
+.default-button {
+  @apply bg-blue-800 px-4 py-2 rounded text-white;
+}
