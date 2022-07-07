@@ -1,0 +1,17 @@
+@import "../../../index.css";
+
+.empty-card {
+  @apply bg-slate-100 flex flex-col h-44 justify-center rounded w-full;
+}
+
+.empty-card__icon {
+  @apply h-16 mb-2 self-center text-gray-600 w-16;
+}
+
+.empty-card__content {
+  @apply self-center;
+}
+
+.content__title {
+  @apply text-4xl text-center;
+}

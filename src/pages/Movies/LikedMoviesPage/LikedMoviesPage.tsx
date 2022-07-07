@@ -4,6 +4,7 @@ import {PageHeader} from '../../../components/Nav/PageHeader/PageHeader';
 import {RootState} from '../../../dataStore';
 import {MovieCard} from '../../../components/Movie/MovieCard/MovieCard';
 import {toggleLike} from '../../../dataStore/slices/movieSlice';
+import {EmptyCard} from '../../../components/shared/EmptyCard/EmptyCard';
 
 export const LikedMoviesPage = () => {
 
@@ -17,12 +18,17 @@ export const LikedMoviesPage = () => {
   return (
     <div className="page">
       <PageHeader title="Liked Movies"/>
-      <div className="page--grid">
-        {likedMovies.map(movie => <MovieCard
-          key={`liked movie ${movie.title} (${movie.id})`}
-          likeAction={() => dispatch(toggleLike(movie.id))}
-          movie={movie}/>)}
-      </div>
+      {likedMovies.length ?
+        (
+          <div className="page--grid">
+            {likedMovies.map(movie => <MovieCard
+              key={`liked movie ${movie.title} (${movie.id})`}
+              likeAction={() => dispatch(toggleLike(movie.id))}
+              movie={movie}/>)}
+          </div>
+        )
+        : <EmptyCard/>
+      }
     </div>
   );
 };

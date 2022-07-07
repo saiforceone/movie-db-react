@@ -10,12 +10,14 @@ import {
   setTotalPages
 } from '../slices/movieSlice';
 import {Movie} from '../../types/MovieTypes';
+import {RootState} from '../index';
 
 const MOVIES_ENDPOINT = import.meta.env.VITE_MOVIE_DB_API_POPULAR_MOVIES;
 
 export const useMovies = () => {
 
   const dispatch = useDispatch();
+  const moviesStore = useSelector((state: RootState) => state.movies);
 
   const getData = async () => {
     dispatch(setIsFetching(true));
@@ -32,6 +34,6 @@ export const useMovies = () => {
   }
 
   useEffect(() => {
-    getData().then();
+    if (!moviesStore.movies.length) getData().then();
   }, []);
 }
