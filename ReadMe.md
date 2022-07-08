@@ -8,7 +8,7 @@ To successfully run this application please do the following
 1. Create the file `env.local` in the root of the project
 2. Add the following values and save the file
 ```
-VITE_MOVIE_DB_API_KEY="d0f5f2e135336200362af8a1a73acb17"
+VITE_MOVIE_DB_API_KEY="PUT_KEY_HERE"
 VITE_MOVIE_DB_API_BASE_URI="https://api.themoviedb.org/3"
 VITE_MOVIE_DB_API_POPULAR_MOVIES="/movie/popular"
 VITE_MOVIE_POSTER_BASE_URI="https://image.tmdb.org/t/p/w500/"
