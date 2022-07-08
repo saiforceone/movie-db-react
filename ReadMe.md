@@ -18,4 +18,13 @@ VITE_MOVIE_POSTER_BASE_URI="https://image.tmdb.org/t/p/w500/"
 
 # Possible Issues :trollface:
 
-You may encounter issues with CORS restrictions. To get around this, you can disable CORS rules in the browser.
+You may encounter issues with **CORS** restrictions. To get around this, you can disable CORS rules in the browser.
+
+# Implementation Overview
+
+This project is structured in the following way
+1. *dataStore* (Redux) 
+2. *utils* - contains utility classes including API 
+3. *Types* - contains project-wide interface and type definitions
+4. *Components* - contains components used throughout the project 
+5. *Pages* - contains page components
