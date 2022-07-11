@@ -27,8 +27,12 @@ export const MovieCard: FC<MovieCardProps> = ({
       <div className="movie-content">
         <h1 className="movie-content__title" onClick={selectAction}>{movie.title}</h1>
         <p className="movie-content__overview">{movie.overview}</p>
-        <MovieRating averageRating={movie.vote_average} totalVotes={movie.vote_count} />
-        <MovieRelease releaseDate={FormatUtils.formatDateString(movie.release_date)} />
+        <div className="mb-3">
+          <MovieRating averageRating={movie.vote_average} totalVotes={movie.vote_count} />
+        </div>
+        <div className="mb-3">
+          <MovieRelease releaseDate={FormatUtils.formatDateString(movie.release_date)} />
+        </div>
         <LikeButton action={() => likeAction()} liked={movie.liked} />
       </div>
     </div>

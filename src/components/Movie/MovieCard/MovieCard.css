@@ -17,5 +17,5 @@
 }
 
 .movie-content__overview {
-  @apply line-clamp-2 overflow-hidden text-ellipsis text-slate-600;
+  @apply line-clamp-2 mb-3 overflow-hidden text-ellipsis text-slate-600;
 }
