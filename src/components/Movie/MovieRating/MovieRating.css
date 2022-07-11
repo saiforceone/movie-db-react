@@ -1,7 +1,7 @@
 @import "../../../index.css";
 
 .movie-rating {
-  @apply flex mt-3 mb-3;
+  @apply flex;
 }
 
 .movie-rating__icon {

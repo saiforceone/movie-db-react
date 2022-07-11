@@ -1,0 +1,25 @@
+@import "../../../index.css";
+
+.movie-detail-modal {
+  @apply flex flex-1;
+}
+
+.movie-detail-modal__poster_container {
+  @apply h-1/2 w-fit p-1;
+}
+
+.movie-detail-modal__content {
+  @apply flex flex-col flex-1 p-1;
+}
+
+.movie-detail-modal__poster_image {
+  @apply self-center h-full w-full;
+}
+
+.movie-detail-modal__title {
+  @apply mb-3 text-4xl text-gray-700;
+}
+
+.movie-detail-modal__overview {
+  @apply leading-8 mb-3 tracking-wide text-lg text-gray-700;
+}

@@ -13,7 +13,7 @@
 }
 
 .movie-content__title {
-  @apply font-semibold line-clamp-1 mb-2 text-slate-800 text-xl;
+  @apply font-semibold line-clamp-1 mb-2 text-slate-800 text-xl hover:cursor-pointer hover:text-blue-700 hover:underline duration-300;
 }
 
 .movie-content__overview {
