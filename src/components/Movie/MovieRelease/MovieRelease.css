@@ -1,0 +1,13 @@
+@import "../../../index.css";
+
+.movie-release {
+  @apply flex flex-1 content-center mb-3;
+}
+
+.movie-release__icon {
+  @apply h-5 w-5 self-center mr-2 text-gray-600;
+}
+
+.movie-release__date {
+  @apply text-xl font-semibold text-gray-600;
+}

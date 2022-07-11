@@ -1,0 +1,21 @@
+@import "../../../index.css";
+
+.movie-rating {
+  @apply flex mt-3 mb-3;
+}
+
+.movie-rating__icon {
+  @apply h-6 w-6 mr-2 self-center text-slate-600;
+}
+
+.movie-rating__value {
+  @apply flex flex-1;
+}
+
+.movie-rating__value_text {
+  @apply font-semibold text-xl text-gray-700;
+}
+
+.movie-rating__value_total {
+  @apply ml-2 text-gray-500;
+}
